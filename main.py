@@ -1,0 +1,27 @@
+from tree import binary_search_tree
+
+myTree = binary_search_tree()
+# myTree.insert(5)
+# myTree.insert(2)
+# myTree.insert(8)
+# myTree.print_tree()
+# print("height: ",myTree.height_of_tree())
+# myTree.insert(12)
+# print("----------")
+# myTree.print_tree()
+# print("height: ",myTree.height_of_tree())
+# myTree.delete(5)
+# myTree.print_tree()
+myTree.insert(5)
+myTree.insert(3)
+myTree.insert(10)
+myTree.insert(12)
+myTree.insert(9)
+myTree.insert(4)
+myTree.insert(1)
+myTree.print_tree()
+if myTree.is_balanced():
+    print("Tree is balanced")
+else:
+    print("Tree is not balanced")
+myTree.level_traversal()
